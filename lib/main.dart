@@ -46,34 +46,25 @@ class Myapp extends StatelessWidget {
                         fontSize: 20.0,
                     ),
                   ),
+                  SizedBox(
+                    height: 10.0,
+                    child: Divider(
+                      height: 2.0,
+                      color: Colors.teal.shade900,
+                    ),
+                  ),
                   Column(
                     children: [
-                      Container(
-                        padding: EdgeInsets.all(15.0),
-                        margin: EdgeInsets.symmetric(vertical: 15.0,horizontal: 15.0),
-                        color: Colors.white,
-                        child: Row(
-                          children: <Widget>[
-                            Icon(Icons.phone,size: 20.0,color: Colors.black,),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            Text("+1 4168574427",style: TextStyle(color: Colors.black,fontSize: 20.0),)
-                          ],
+                      Card(
+                        child: ListTile(
+                          leading: Icon(Icons.phone,size: 20.0,color: Colors.black,),
+                          title:Text("+1 4168574427",style: TextStyle(color: Colors.black,fontSize: 20.0),) ,
                         ),
                       ),
-                      Container(
-                        padding: EdgeInsets.all(15.0),
-                        margin: EdgeInsets.symmetric(vertical: 15.0,horizontal: 15.0),
-                        color: Colors.white,
-                        child: Row(
-                          children: <Widget>[
-                            Icon(Icons.email,size: 20.0,color: Colors.black,),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            Text("dddhrumil21@gmail.com",style: TextStyle(color: Colors.black,fontSize: 20.0),)
-                          ],
+                      Card(
+                        child: ListTile(
+                          leading: Icon(Icons.email,size: 20.0,color: Colors.black,),
+                          title:Text("dddhrumil21@gmail.com",style: TextStyle(color: Colors.black,fontSize: 20.0),) ,
                         ),
                       ),
                     ],
@@ -87,3 +78,4 @@ class Myapp extends StatelessWidget {
     );
   }
 }
+
